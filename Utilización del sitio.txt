@@ -1,0 +1,6 @@
+Principal redirige a  página principal llamada "index.html"
+Sopa,Pay y Helado redirige a paginas HTML
+Contacto redirige a pagina contacto html donde se agregara un formulario para actividad futura.
+Creditos, redirige a otra pagina denominada creditos 
+
+NOTA: Ya esta el formulario en "contactos"

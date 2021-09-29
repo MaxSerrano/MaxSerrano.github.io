@@ -1,0 +1,139 @@
+*{margin: 0; 
+  padding:0;}
+:root {
+    --blanco: #ffffff; 
+    --naranja:  #f7b63f;
+    --rojo:   #f15208;
+    --fuente-principal: 3rem;
+
+}
+/*globales*/
+h1{
+    color: var(--naranja);
+    font-size: 35px;
+}
+h2{
+    color: var(--naranja);
+    font-size: 35px;
+}
+h3{
+    color: var(--naranja);
+    font-size: 25px;
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+ul{
+    text-align: justify;
+    font-size: 20px;
+}
+html {
+    font-size: 80%;
+    box-sizing: border-box; /*hack para box model*/
+
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+      font-size: 10px;
+      font-family: 'krub', sans-serif;
+      background-image: linear-gradient(to left,var(--grisclaro) 0%, var(--blanco) 10%);
+  }
+  /*redes sociales*/
+
+
+.Titulo{
+    text-align: center;
+    font-size: var(--fuente-principal); 
+    color: var(--naranja);
+}
+.subtitulo{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--rojo);
+}
+.logo{
+    position: relative;
+    top: -270px;
+    left: 30px;
+    background-image: url(/img/logotipo.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/******contenedor*/
+.contenedorS{
+    position: static;
+}
+.Recetas{
+    text-align: left;
+    color: var(--naranja);
+    font-size: 4rem;
+}
+/*boton0 1 2 3*/
+.boton, .boton1, .boton2, .boton3{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+
+.boton:hover{
+    cursor: pointer;
+}  
+@media (min-width:780px ) {
+    .boton, .boton1, .boton2{
+        display: grid;
+        grid-template-rows: auto;
+    }
+}  
+/*navegación*/
+.nav-bg{
+    background-color:var(--rojo);
+}
+.menu-principal{
+   display: flex;
+   flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (min-width: 500px) {
+    .menu-principal{
+        flex-direction: row;
+    } 
+}
+.menu-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.menu-principal a:hover{
+    background-color: var(--naranja);
+    color: var(--rojo);
+}
+.imagen{
+    position: relative;
+    top: -100px;
+    left: 350px;
+}
+.contacto{
+    position: relative;
+    top: -350px;
+    left: 50px;
+}
